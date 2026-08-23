@@ -1611,7 +1611,7 @@ export default function App() {
 
             <div className="space-y-5">
               {[
-                { icon: MapPin, label: "Address", value: "Loyola Composite PU College, Mundargi, Gadag District, Karnataka — 581349", href: null },
+                { icon: MapPin, label: "Address", value: "Loyola Composite PU College, Mundgod, uttar kannada, Karnataka — 581349", href: null },
                 { icon: Phone, label: "Phone", value: "+91-8375-220011 | +91-8375-220012", href: null },
                 { icon: Mail, label: "Email", value: siteSettings.email, href: `mailto:${siteSettings.email}` },
                 { icon: Clock, label: "Office Hours", value: "Mon–Sat: 9:00 AM – 5:00 PM", href: null },
