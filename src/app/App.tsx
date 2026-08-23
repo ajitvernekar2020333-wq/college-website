@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import collegeLogo from "@/imports/image.png";
 import collegePhoto from "@/imports/school_two.jpg";
+import teachersDayPhoto from "@/imports/teachers-day.jpg";
 import {
   GraduationCap,
   BookOpen,
@@ -259,6 +260,12 @@ const DEFAULT_FUNCTIONS: FunctionPost[] = [
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&h=650&fit=crop&auto=format",
     title: "Student Activities",
     description: "Clubs, outreach, leadership, and experiences that build confidence.",
+  },
+  {
+    id: 4,
+    image: teachersDayPhoto,
+    title: "Teachers' Day",
+    description: "A celebration of our teachers and their dedicated service to our students.",
   },
 ];
 
@@ -1431,7 +1438,7 @@ export default function App() {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {functionPosts.map((event) => (
-              <article key={event.title} className="group overflow-hidden rounded-lg border border-border bg-card">
+              <article key={event.id} className="group overflow-hidden rounded-lg border border-border bg-card">
                 <div className="h-64 overflow-hidden bg-muted">
                   <img src={event.image} alt={event.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
